@@ -1,0 +1,170 @@
+[
+    {
+        "id": "ae8ceacbb646dae5",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "593709476d62c98b",
+        "type": "inject",
+        "z": "ae8ceacbb646dae5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"temperature\": 25.5, \"sensor\": \"ESP32_01\"}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "605ae4d2edcee652"
+            ]
+        ]
+    },
+    {
+        "id": "605ae4d2edcee652",
+        "type": "mqtt out",
+        "z": "ae8ceacbb646dae5",
+        "name": "",
+        "topic": "campus/lab1/temperature",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "31d3cd3b40ecc53e",
+        "x": 550,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "a6d4651f00b984a3",
+        "type": "inject",
+        "z": "ae8ceacbb646dae5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"temperature\": 28.0, \"sensor\": \"ESP32_02\"}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "ba8d31603468cc53"
+            ]
+        ]
+    },
+    {
+        "id": "ba8d31603468cc53",
+        "type": "mqtt out",
+        "z": "ae8ceacbb646dae5",
+        "name": "",
+        "topic": "campus/lab2/temperature",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "31d3cd3b40ecc53e",
+        "x": 550,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "94ad8d0c25388a0d",
+        "type": "inject",
+        "z": "ae8ceacbb646dae5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"humidity\": 60, \"sensor\": \"ESP32_03\"}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "a6b61ed4a16aa8e0"
+            ]
+        ]
+    },
+    {
+        "id": "a6b61ed4a16aa8e0",
+        "type": "mqtt out",
+        "z": "ae8ceacbb646dae5",
+        "name": "",
+        "topic": "campus/lab1/humidity",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "31d3cd3b40ecc53e",
+        "x": 540,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "31d3cd3b40ecc53e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "host.docker.internal",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
