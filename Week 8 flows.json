@@ -1,0 +1,52 @@
+[
+    {
+        "id": "4e4793a1da322ab2",
+        "type": "mongodb4",
+        "z": "e41083512b72ce52",
+        "clientNode": "cace07bcc5a337ec",
+        "mode": "collection",
+        "collection": "environment_telemetry",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "",
+        "x": 780,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cace07bcc5a337ec",
+        "type": "mongodb4-client",
+        "name": "insertOne",
+        "protocol": "mongodb",
+        "hostname": "",
+        "port": "",
+        "dbName": "smart_campus",
+        "appName": "",
+        "authSource": "",
+        "authMechanism": "DEFAULT",
+        "tls": false,
+        "tlsCAFile": "",
+        "tlsCertificateKeyFile": "",
+        "tlsInsecure": false,
+        "connectTimeoutMS": "30000",
+        "socketTimeoutMS": "0",
+        "minPoolSize": "0",
+        "maxPoolSize": "100",
+        "maxIdleTimeMS": "0",
+        "uri": "mongodb+srv://student:1o2toODJg81rn5Vr@cluster0.i4bvar6.mongodb.net/?appName=Cluster0",
+        "advanced": "{}",
+        "uriTabActive": "tab-uri-advanced"
+    },
+    {
+        "id": "92db3e262805fb63",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-mongodb4": "3.4.0"
+        }
+    }
+]
